@@ -1,0 +1,181 @@
+﻿
+<h4>Alterar conteúdo Html para completar o nome</h4>
+<!-- Exemplo Nº 1 -->
+<p id="exemplo">Meu Nome é Relinton</p>
+
+<button class="btn-success" type="button" onclick='document.getElementById("exemplo").innerHTML = "Ops Meu nome é Relinton Pinheiro Franco"'>Alterar Nome</button>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Alterar conteúdo Html para Acender e Apagar a Lâmpada</h4>
+<!-- Exemplo Nº 2 -->
+<button onclick="document.getElementById('imagemlampada1').src='imagemlampada2.gif'">Acender a Lâmpada</button>
+<img id="imagemlampada1" src="imagemlampada1.gif" style="width:100px;" />
+<button onclick="document.getElementById('imagemlampada1').src='imagemlampada1.gif'">Desligar a Lâmpada</button>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Alterar estilo de um conteúdo Html</h4>
+<!-- Exemplo Nº 3 -->
+<p id="ex3">Lorem Ipsum eu sou o conteúdo.</p>
+<button type="button" onclick="document.getElementById('ex3').style.fontSize='35px'">Alterar estilo!</button>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Ocultar elementos HTML</h4>
+<!-- Exemplo Nº 4 -->
+<p id="ex4">Olá, eu sou o conteúdo a ser Ocultado :)</p>
+<button type="button" onclick="document.getElementById('ex4').style.display='none'">Ocultar o conteúdo!</button>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Mostrar elementos HTML ocultos.</h4>
+<!-- Exemplo Nº 5 -->
+<p id="ex5" style="display:none">Olá, eu estava ocultado para você!</p>
+<button type="button" onclick="document.getElementById('ex5').style.display='block'">Mostrar elemento Oculto!</button>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Alterar conteúdo Html por meio de Functions</h4>
+<!-- Exemplo Nº 6 -->
+<script>
+    function AlterarHtmlFunction() {
+        document.getElementById("ex6").innerHTML = "Nome completo é: Relinton Pinheiro Franco"
+    }
+</script>
+<p id="ex6">Meu nome é Relinton</p>
+<button type="button" onclick="AlterarHtmlFunction()">Ver Nome Completo</button>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Acrescentar conteúdo mais soma</h4>
+<!-- Exemplo Nº 7 -->
+<p id="ex7"></p>
+
+<script>
+    document.getElementById("ex7").innerHTML = 5 + 2;
+</script>
+
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Declarações JavaScript</h4>
+<!-- Exemplo Nº 8 -->
+
+<p id="ex8"></p>
+
+<script>
+    let x, y, z;
+    x = 5;
+    y = 2;
+    z = x + y;
+
+    document.getElementById("ex8").innerHTML = "O valor de Z é " + z + ".";
+</script>
+
+
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Objetos JavaScript podem conter muitos valores.</h4>
+<!-- Exemplo Nº 9 -->
+<p id="ex9"></p>
+<script>
+    const carro = { type: "Fiat", model: "500", color: "white" };
+    document.getElementById("ex9").innerHTML = "O tipo do carro é " + carro.type;
+</script>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Acessar propriedades do Objeto.</h4>
+<!-- Exemplo Nº 10 -->
+<p id="ex10"></p>
+<script>
+    const pessoa = {
+        primeiroNome: "Relinton",
+        ultimoNome: "Pinheiro Franco",
+        id: 2022
+    };
+
+    document.getElementById("ex10").innerHTML =
+        pessoa["primeiroNome"] + " " + pessoa["ultimoNome"];
+</script>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Acessar propriedades do Objeto com Function.</h4>
+<!-- Exemplo Nº 11 -->
+<p id="ex10"></p>
+<script>
+    const pessoa = {
+        primeiroNome: "Relinton",
+        ultimoNome: "Pinheiro Franco",
+        id: 2022,
+        nomeCompleto: function () {
+            return this.primeiroNome + " " + this.ultimoNome;
+        }
+    };
+</script>
+
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Acessar propriedades do Objeto com Function.</h4>
+<!-- Exemplo Nº 12 -->
+<button onclick="displayDate()">Verificar data</button>
+
+<script>
+    function displayDate() {
+        document.getElementById("ex12").innerHTML = Date();
+    }
+</script>
+
+<p id="ex12"></p>
+
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>A propriedade length retorna o comprimento de uma string.</h4>
+<!-- Exemplo Nº 13 -->
+<p id="ex13"></p>
+
+<script>
+    let text = "Relinton";
+    document.getElementById("ex13").innerHTML = text.length;
+</script>

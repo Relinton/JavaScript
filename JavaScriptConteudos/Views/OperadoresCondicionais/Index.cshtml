@@ -1,0 +1,95 @@
+﻿
+<h4>Comparação JavaScript</h4>
+<!-- Exemplo Nº 1 -->
+<p>Insira sua idade e clique no botão:</p>
+<input id="idade" value="" />
+
+<button onclick="verificarIdade()">Verificar</button>
+
+<p id="ex1"></p>
+
+<script>
+    function verificarIdade() {
+        let idade = document.getElementById("idade").value;
+        let votacao = (idade < 18) ? "Muito jovem para votar." : "Idade suficiente para votar";
+        document.getElementById("ex1").innerHTML = votacao + " votar.";
+    }
+</script>
+
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Condição If</h4>
+<!-- Exemplo Nº 2 -->
+
+<p>Exibir "Bom dia!" se a hora for inferior às 18:00:</p>
+<p id="ex2"></p>
+<script>
+    const hora = new Date().getHours();
+    let saudacao;
+
+    if (hora < 18) {
+        saudacao = "Bom dia";
+    } else {
+        saudacao = "Boa noite";
+    }
+
+    document.getElementById("ex2").innerHTML = saudacao;
+</script>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>Interruptor de JavaScript</h4>
+<!-- Exemplo Nº 3 -->
+<p id="ex3"></p>
+<script>
+    let dia;
+    switch (new Date().getDay()) {
+        case 0:
+            dia = "Domingo";
+            break;
+        case 1:
+            dia = "Segunda-Feira";
+            break;
+        case 2:
+            dia = "Terça-Feira";
+            break;
+        case 3:
+            dia = "Quarta-Feira";
+            break;
+        case 4:
+            dia = "Quinta-Feira";
+            break;
+        case 5:
+            dia = "Sexta-Feira";
+            break;
+        case 6:
+            dia = "Sábado";
+    }
+    document.getElementById("ex3").innerHTML = "Hoje é " + dia;
+</script>
+
+<br />
+<br />
+<br />
+<br />
+
+<h4>JavaScript For</h4>
+<!-- Exemplo Nº 4 -->
+<p id="ex4"></p>
+<script>
+    const carros = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+    let texto = "";
+    for (let i = 0; i < carros.length; i++) {
+        texto += carros[i] + "<br>";
+    }
+
+    document.getElementById("ex4").innerHTML = texto;
+</script>
