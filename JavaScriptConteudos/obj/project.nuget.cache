@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h+lrvvX/EOCQtJE6mWGnJlf7qx++nzxbT7POPJtcL7RpzWrPOyTXZFd5qUSJNmCtRFjmgNjSdfI8LDwRBcxilg==",
+  "dgSpecHash": "cCVpGvc98JZOWBF9VI+2RKzfISRSibnXborshRrh473KVtzpshXAwH0D/aYkJFfZ2OBV059v6r35WUPKCSktHA==",
   "success": true,
-  "projectFilePath": "D:\\Relinton Sistemas\\JavaScriptConteudos\\JavaScriptConteudos\\JavaScriptConteudos.csproj",
+  "projectFilePath": "D:\\RelintonProjetos\\JavaScriptConteudos\\JavaScriptConteudos\\JavaScriptConteudos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\01712766201\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.24\\microsoft.aspnetcore.mvc.razor.extensions.3.1.24.nupkg.sha512",
     "C:\\Users\\01712766201\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.runtimecompilation\\3.1.24\\microsoft.aspnetcore.mvc.razor.runtimecompilation.3.1.24.nupkg.sha512",
